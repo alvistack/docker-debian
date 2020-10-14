@@ -1,8 +1,14 @@
 # Docker Image Packaging for Debian
 
-## 10.5-XalvistackY - TBC
+## 10.6-XalvistackY - TBC
 
 ### Major Changes
+
+## 10.6-4alvistack1 - 2020-10-14
+
+### Major Changes
+
+  - Refine Molecule matrix
 
 ## 10.5-4alvistack1 - 2020-09-07
 

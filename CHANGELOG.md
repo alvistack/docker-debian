@@ -4,6 +4,9 @@
 
 ### Major Changes
 
+  - Add Node.js 15 support
+  - Remove Node.js 14 support
+
 ## 10.6-4alvistack1 - 2020-10-14
 
 ### Major Changes

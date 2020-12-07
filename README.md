@@ -11,7 +11,7 @@ Learn more about Debian: <https://www.debian.com/>
 
 ## Supported Tags and Respective Packer Template Links
 
-  - [`10`, `latest`](https://github.com/alvistack/docker-debian/blob/master/packer/10/packer.json)
+  - [`10`, `latest`](https://github.com/alvistack/docker-debian/blob/master/packer/docker-10/packer.json)
 
 ## Overview
 

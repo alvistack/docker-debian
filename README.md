@@ -1,6 +1,6 @@
 # Docker Image Packaging for Debian
 
-[![Travis](https://img.shields.io/travis/com/alvistack/docker-debian.svg)](https://travis-ci.com/alvistack/docker-debian)
+[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-debian/master)](https://gitlab.com/alvistack/docker-debian/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-debian.svg)](https://github.com/alvistack/docker-debian/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-debian.svg)](https://github.com/alvistack/docker-debian/blob/master/LICENSE)
 [![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/debian.svg)](https://hub.docker.com/r/alvistack/debian/)

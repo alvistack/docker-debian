@@ -1,9 +1,9 @@
 # Docker Image Packaging for Debian
 
-[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-debian/master)](https://gitlab.com/alvistack/docker-debian/-/pipelines)
+[![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-debian/master)](https://gitlab.com/alvistack/docker-debian/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-debian.svg)](https://github.com/alvistack/docker-debian/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-debian.svg)](https://github.com/alvistack/docker-debian/blob/master/LICENSE)
-[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/debian.svg)](https://hub.docker.com/r/alvistack/debian/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/debian-10.svg)](https://hub.docker.com/r/alvistack/debian-10)
 
 Debian is a free and open-source operating system and Linux distribution based on Debian.
 
@@ -11,7 +11,8 @@ Learn more about Debian: <https://www.debian.com/>
 
 ## Supported Tags and Respective Packer Template Links
 
-  - [`10`, `latest`](https://github.com/alvistack/docker-debian/blob/master/packer/docker-10/packer.json)
+  - [`alvistack/debian-10`](https://hub.docker.com/r/alvistack/debian-10)
+      - [`packer/docker-10/packer.json`](https://github.com/alvistack/docker-debian/blob/master/packer/docker-10/packer.json)
 
 ## Overview
 
@@ -58,13 +59,13 @@ Now you could SSH to it as normal:
 
 ## Versioning
 
-### `alvistack/debian:latest`
+### `YYYYMMDD.Y.Z`
 
-The `latest` tag matches the most recent [GitHub Release](https://github.com/alvistack/docker-debian/releases) of this repository. Thus using `alvistack/debian:latest` or `alvistack/debian` will ensure you are running the most up to date stable version of this image.
+Release tags could be find from [GitHub Release](https://github.com/alvistack/docker-debian/releases) of this repository. Thus using these tags will ensure you are running the most up to date stable version of this image.
 
-### `alvistack/debian:<version>`
+### `YYYYMMDD.0.0`
 
-The version tags are rolling release rebuild by [Travis](https://travis-ci.com/alvistack/docker-debian) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
+Version tags ended with `.0.0` are rolling release rebuild by [GitLab pipeline](https://gitlab.com/alvistack/docker-debian/-/pipelines) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
 
 ## License
 

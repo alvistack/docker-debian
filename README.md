@@ -5,9 +5,9 @@
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-debian.svg)](https://github.com/alvistack/docker-debian/blob/master/LICENSE)
 [![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/debian-10.svg)](https://hub.docker.com/r/alvistack/debian-10)
 
-Debian is a free and open-source operating system and Linux distribution based on Debian.
+Debian is an operating system which is composed primarily of free and open-source software, most of which is under the GNU General Public License, and developed by a group of individuals known as the Debian project. Debian is one of the most popular Linux distributions for personal computers and network servers, and has been used as a base for several other Linux distributions.
 
-Learn more about Debian: <https://www.debian.com/>
+Learn more about Debian: <https://debian.org/>
 
 ## Supported Tags and Respective Packer Template Links
 
@@ -29,14 +29,14 @@ Based on [Official Debian Docker Image](https://hub.docker.com/_/debian/) with s
 Start SSHD:
 
     # Pull latest image
-    docker pull alvistack/debian
+    docker pull alvistack/debian-10
     
     # Run as detach
     docker run \
         -itd \
         --name debian \
         --publish 2222:22 \
-        alvistack/debian
+        alvistack/debian-10
 
 **Success**. SSHD is now available on port `2222`.
 

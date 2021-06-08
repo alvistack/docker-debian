@@ -4,6 +4,8 @@
 
 ### Major Changes
 
+  - Support Debian 11
+
 ## 20210602.1.1 - 2021-06-02
 
 ### Major Changes

@@ -13,7 +13,7 @@
         "CMD [\"/usr/sbin/sshd\", \"-eD\"]"
       ],
       "commit": true,
-      "image": "debian:buster",
+      "image": "debian:bullseye",
       "type": "docker"
     }
   ],

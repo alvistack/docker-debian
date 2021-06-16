@@ -4,6 +4,7 @@
 
 ### Major Changes
 
+  - Upgrade minimal Ansible community package support to 4.1.0
   - Support Debian 11
 
 ## 20210602.1.1 - 2021-06-02

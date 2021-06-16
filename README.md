@@ -4,7 +4,9 @@
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-debian.svg)](https://github.com/alvistack/docker-debian/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-debian.svg)](https://github.com/alvistack/docker-debian/blob/master/LICENSE)
 [![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/debian-10.svg)](https://hub.docker.com/r/alvistack/debian-10)
+
 Debian is an operating system which is composed primarily of free and open-source software, most of which is under the GNU General Public License, and developed by a group of individuals known as the Debian project. Debian is one of the most popular Linux distributions for personal computers and network servers, and has been used as a base for several other Linux distributions.
+
 Learn more about Debian: <https://debian.org/>
 
 ## Supported Tags and Respective Packer Template Links
@@ -17,6 +19,7 @@ Learn more about Debian: <https://debian.org/>
 ## Overview
 
 This Docker container makes it easy to get an instance of SSHD up and running with Debian.
+
 Based on [Official Debian Docker Image](https://hub.docker.com/_/debian/) with some minor hack:
 
   - Packaging by Packer Docker builder and Ansible provisioner in single layer
@@ -26,25 +29,35 @@ Based on [Official Debian Docker Image](https://hub.docker.com/_/debian/) with s
 ### Quick Start
 
 Start SSHD:
-\# Pull latest image
-docker pull alvistack/debian-10
-\# Run as detach
-docker run   
-\-itd   
-\--name debian   
-\--publish 2222:22   
-alvistack/debian-10
+
+    # Pull latest image
+    docker pull alvistack/debian-10
+    
+    # Run as detach
+    docker run \
+        -itd \
+        --name debian \
+        --publish 2222:22 \
+        alvistack/debian-10
+
 **Success**. SSHD is now available on port `2222`.
+
 Because this container **DIDN'T** handle the generation of root password, so you should set it up manually with `pwgen` by:
-\# Generate password with pwgen
-PASSWORD=$(docker exec -i debian pwgen -cnyB1); echo $PASSWORD
-\# Inject the generated password
-echo "root:$PASSWORD" | docker exec -i debian chpasswd
+
+    # Generate password with pwgen
+    PASSWORD=$(docker exec -i debian pwgen -cnyB1); echo $PASSWORD
+    
+    # Inject the generated password
+    echo "root:$PASSWORD" | docker exec -i debian chpasswd
+
 Alternatively, you could inject your own SSH public key into container's authorized\_keys by:
-\# Inject your own SSH public key
-(docker exec -i debian sh -c "cat \>\> /root/.ssh/authorized\_keys") \< \~/.ssh/id\_rsa.pub
+
+    # Inject your own SSH public key
+    (docker exec -i debian sh -c "cat >> /root/.ssh/authorized_keys") < ~/.ssh/id_rsa.pub
+
 Now you could SSH to it as normal:
-ssh root@localhost -p 2222
+
+    ssh root@localhost -p 2222
 
 ## Versioning
 

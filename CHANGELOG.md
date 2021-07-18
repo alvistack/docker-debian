@@ -4,7 +4,11 @@
 
 ### Major Changes
 
-  - Upgrade minimal Ansible community package support to 4.1.0
+## 20210718.1.1 - 2021-07-18
+
+### Major Changes
+
+  - Upgrade minimal Ansible community package support to 4.2.0
   - Support Debian 11
 
 ## 20210602.1.1 - 2021-06-02
@@ -19,9 +23,12 @@
 
 ### Major Changes
 
-  - Bugfix [ansible-lint `namespace`](https://github.com/ansible-community/ansible-lint/pull/1451)
-  - Bugfix [ansible-lint `no-handler`](https://github.com/ansible-community/ansible-lint/pull/1402)
-  - Bugfix [ansible-lint `unnamed-task`](https://github.com/ansible-community/ansible-lint/pull/1413)
+  - Bugfix [ansible-lint
+    `namespace`](https://github.com/ansible-community/ansible-lint/pull/1451)
+  - Bugfix [ansible-lint
+    `no-handler`](https://github.com/ansible-community/ansible-lint/pull/1402)
+  - Bugfix [ansible-lint
+    `unnamed-task`](https://github.com/ansible-community/ansible-lint/pull/1413)
   - Change GIT tag as per Vagrant Box naming and versioning limitation
 
 ## 10.6-4alvistack7 - 2020-12-09
@@ -42,5 +49,6 @@
   - Debian 10.5 based
   - Minimized `Dockerfile` for meta data definition
   - Provision by Ansible and Molecule Docker driver in single layer
-  - Handle `ENTRYPOINT` with [catatonit](https://github.com/openSUSE/catatonit)
+  - Handle `ENTRYPOINT` with
+    [catatonit](https://github.com/openSUSE/catatonit)
   - Handle `CMD` with SSHD

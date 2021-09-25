@@ -14,6 +14,7 @@
       ],
       "commit": true,
       "image": "debian:bullseye",
+      "privileged": true,
       "type": "docker"
     }
   ],

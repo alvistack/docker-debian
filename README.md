@@ -13,6 +13,8 @@ Learn more about Debian: <https://debian.org/>
 
 ## Supported Tags and Respective Packer Template Links
 
+  - [`alvistack/debian-testing`](https://hub.docker.com/r/alvistack/debian-testing)
+      - [`packer/docker-testing/packer.json`](https://github.com/alvistack/docker-debian/blob/master/packer/docker-testing/packer.json)
   - [`alvistack/debian-11`](https://hub.docker.com/r/alvistack/debian-11)
       - [`packer/docker-11/packer.json`](https://github.com/alvistack/docker-debian/blob/master/packer/docker-11/packer.json)
   - [`alvistack/debian-10`](https://hub.docker.com/r/alvistack/debian-10)

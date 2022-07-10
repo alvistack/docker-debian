@@ -1,6 +1,6 @@
 # Docker Image Packaging for Debian
 
-<img src="/alvistack.svg" width="75" alt="AlviStack">
+<a href="https://alvistack.com" title="AlviStack" target="_blank"><img src="/alvistack.svg" height="75" alt="AlviStack"></a>
 
 [![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-debian/master)](https://gitlab.com/alvistack/docker-debian/-/pipelines)
 [![GitHub tag](https://img.shields.io/github/tag/alvistack/docker-debian.svg)](https://github.com/alvistack/docker-debian/tags)

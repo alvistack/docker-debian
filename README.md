@@ -22,12 +22,12 @@ Learn more about Debian: <https://debian.org/>
 
 ## Supported Tags and Respective Packer Template Links
 
--   [`alvistack/debian-testing`](https://hub.docker.com/r/alvistack/debian-testing)
-    -   [`packer/docker-testing/packer.json`](https://github.com/alvistack/docker-debian/blob/master/packer/docker-testing/packer.json)
--   [`alvistack/debian-12`](https://hub.docker.com/r/alvistack/debian-12)
-    -   [`packer/docker-12/packer.json`](https://github.com/alvistack/docker-debian/blob/master/packer/docker-12/packer.json)
--   [`alvistack/debian-11`](https://hub.docker.com/r/alvistack/debian-11)
-    -   [`packer/docker-11/packer.json`](https://github.com/alvistack/docker-debian/blob/master/packer/docker-11/packer.json)
+- [`alvistack/debian-testing`](https://hub.docker.com/r/alvistack/debian-testing)
+  - [`packer/docker-testing/packer.json`](https://github.com/alvistack/docker-debian/blob/master/packer/docker-testing/packer.json)
+- [`alvistack/debian-12`](https://hub.docker.com/r/alvistack/debian-12)
+  - [`packer/docker-12/packer.json`](https://github.com/alvistack/docker-debian/blob/master/packer/docker-12/packer.json)
+- [`alvistack/debian-11`](https://hub.docker.com/r/alvistack/debian-11)
+  - [`packer/docker-11/packer.json`](https://github.com/alvistack/docker-debian/blob/master/packer/docker-11/packer.json)
 
 ## Overview
 
@@ -37,11 +37,11 @@ running with Debian.
 Based on [Official Debian Docker
 Image](https://hub.docker.com/_/debian/) with some minor hack:
 
--   Packaging by Packer Docker builder and Ansible provisioner in single
-    layer
--   Handle `ENTRYPOINT` with
-    [catatonit](https://github.com/openSUSE/catatonit)
--   Handle `CMD` with SSHD
+- Packaging by Packer Docker builder and Ansible provisioner in single
+  layer
+- Handle `ENTRYPOINT` with
+  [catatonit](https://github.com/openSUSE/catatonit)
+- Handle `CMD` with SSHD
 
 ### Quick Start
 
@@ -96,12 +96,12 @@ latest packages provided by the base image project.
 
 ## License
 
--   Code released under [Apache License 2.0](LICENSE)
--   Docs released under [CC BY
-    4.0](http://creativecommons.org/licenses/by/4.0/)
+- Code released under [Apache License 2.0](LICENSE)
+- Docs released under [CC BY
+  4.0](http://creativecommons.org/licenses/by/4.0/)
 
 ## Author Information
 
--   Wong Hoi Sing Edison
-    -   <https://twitter.com/hswong3i>
-    -   <https://github.com/hswong3i>
+- Wong Hoi Sing Edison
+  - <https://twitter.com/hswong3i>
+  - <https://github.com/hswong3i>

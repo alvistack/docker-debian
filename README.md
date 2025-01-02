@@ -26,8 +26,6 @@ Learn more about Debian: <https://debian.org/>
   - [`packer/docker-testing/packer.json`](https://github.com/alvistack/docker-debian/blob/master/packer/docker-testing/packer.json)
 - [`alvistack/debian-12`](https://hub.docker.com/r/alvistack/debian-12)
   - [`packer/docker-12/packer.json`](https://github.com/alvistack/docker-debian/blob/master/packer/docker-12/packer.json)
-- [`alvistack/debian-11`](https://hub.docker.com/r/alvistack/debian-11)
-  - [`packer/docker-11/packer.json`](https://github.com/alvistack/docker-debian/blob/master/packer/docker-11/packer.json)
 
 ## Overview
 

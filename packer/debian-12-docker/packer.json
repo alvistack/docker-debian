@@ -33,6 +33,16 @@
     {
       "inline": [
         "set -eu",
+        "rm -rf /etc/apt/sources.list*",
+        "mkdir -p /etc/apt/sources.list.d",
+        "printf \"Components: main contrib non-free non-free-firmware\nEnabled: yes\nX-Repolib-Name: debian\nSigned-By: /usr/share/keyrings/debian-archive-keyring.gpg\nSuites: bookworm bookworm-updates\nTypes: deb\nURIs: http://deb.debian.org/debian\n\" | tee /etc/apt/sources.list.d/debian.sources > /dev/null",
+        "printf \"Components: main contrib non-free non-free-firmware\nEnabled: yes\nX-Repolib-Name: debian-security\nSigned-By: /usr/share/keyrings/debian-archive-keyring.gpg\nSuites: bookworm-security\nTypes: deb\nURIs: http://deb.debian.org/debian-security\n\" | tee /etc/apt/sources.list.d/debian-security.sources > /dev/null"
+      ],
+      "type": "shell"
+    },
+    {
+      "inline": [
+        "set -eu",
         "apt-get update",
         "DEBIAN_FRONTEND=noninteractive apt-get dist-upgrade -y",
         "DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates curl gcc hostname iproute2 locales locales-all python3 sudo"
